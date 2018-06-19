@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69096C9420D5C7C200F729A3 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69096C9320D5C7C200F729A3 /* SearchResult.swift */; };
+		698023A520D9474D00B677B2 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698023A420D9474D00B677B2 /* SearchResultCell.xib */; };
 		69DF155A20D0D88600A3400D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF155920D0D88600A3400D /* AppDelegate.swift */; };
-		69DF155C20D0D88600A3400D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF155B20D0D88600A3400D /* ViewController.swift */; };
+		69DF155C20D0D88600A3400D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF155B20D0D88600A3400D /* SearchViewController.swift */; };
 		69DF155F20D0D88600A3400D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DF155D20D0D88600A3400D /* Main.storyboard */; };
 		69DF156120D0D88800A3400D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DF156020D0D88800A3400D /* Assets.xcassets */; };
 		69DF156420D0D88800A3400D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DF156220D0D88800A3400D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69096C9320D5C7C200F729A3 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		698023A420D9474D00B677B2 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		69DF155620D0D88600A3400D /* JDStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDStoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DF155920D0D88600A3400D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69DF155B20D0D88600A3400D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69DF155B20D0D88600A3400D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		69DF155E20D0D88600A3400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69DF156020D0D88800A3400D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69DF156320D0D88800A3400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				69DF155920D0D88600A3400D /* AppDelegate.swift */,
-				69DF155B20D0D88600A3400D /* ViewController.swift */,
+				69DF155B20D0D88600A3400D /* SearchViewController.swift */,
 				69DF155D20D0D88600A3400D /* Main.storyboard */,
 				69DF156020D0D88800A3400D /* Assets.xcassets */,
 				69DF156220D0D88800A3400D /* LaunchScreen.storyboard */,
 				69DF156520D0D88800A3400D /* Info.plist */,
+				69096C9320D5C7C200F729A3 /* SearchResult.swift */,
+				698023A420D9474D00B677B2 /* SearchResultCell.xib */,
 			);
 			path = JDStoreSearch;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				69DF156420D0D88800A3400D /* LaunchScreen.storyboard in Resources */,
 				69DF156120D0D88800A3400D /* Assets.xcassets in Resources */,
+				698023A520D9474D00B677B2 /* SearchResultCell.xib in Resources */,
 				69DF155F20D0D88600A3400D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69DF155C20D0D88600A3400D /* ViewController.swift in Sources */,
+				69DF155C20D0D88600A3400D /* SearchViewController.swift in Sources */,
+				69096C9420D5C7C200F729A3 /* SearchResult.swift in Sources */,
 				69DF155A20D0D88600A3400D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
