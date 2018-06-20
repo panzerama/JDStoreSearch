@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69096C9420D5C7C200F729A3 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69096C9320D5C7C200F729A3 /* SearchResult.swift */; };
 		697D495120D9F41000C41ACF /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D495020D9F41000C41ACF /* SearchResultCell.swift */; };
+		697D495320DA1AC700C41ACF /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D495220DA1AC700C41ACF /* NothingFoundCell.xib */; };
 		698023A520D9474D00B677B2 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698023A420D9474D00B677B2 /* SearchResultCell.xib */; };
 		69DF155A20D0D88600A3400D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF155920D0D88600A3400D /* AppDelegate.swift */; };
 		69DF155C20D0D88600A3400D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF155B20D0D88600A3400D /* SearchViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		69096C9320D5C7C200F729A3 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		697D495020D9F41000C41ACF /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		697D495220DA1AC700C41ACF /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		698023A420D9474D00B677B2 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		69DF155620D0D88600A3400D /* JDStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDStoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DF155920D0D88600A3400D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				698023A420D9474D00B677B2 /* SearchResultCell.xib */,
 				697D495020D9F41000C41ACF /* SearchResultCell.swift */,
 				69DF155B20D0D88600A3400D /* SearchViewController.swift */,
+				697D495220DA1AC700C41ACF /* NothingFoundCell.xib */,
 			);
 			path = JDStoreSearch;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				69DF156420D0D88800A3400D /* LaunchScreen.storyboard in Resources */,
 				69DF156120D0D88800A3400D /* Assets.xcassets in Resources */,
 				698023A520D9474D00B677B2 /* SearchResultCell.xib in Resources */,
+				697D495320DA1AC700C41ACF /* NothingFoundCell.xib in Resources */,
 				69DF155F20D0D88600A3400D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
