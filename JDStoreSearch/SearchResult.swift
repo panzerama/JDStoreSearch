@@ -8,7 +8,16 @@
 
 import Foundation
 
-class SearchResult {
-    var name = ""
+class ResultArray: Decodable {
+    var resultCount = 0
+    var results = [SearchResult]()
+}
+
+class SearchResult: Decodable {
     var artistName = ""
+    var trackName = ""
+    
+    var name: String {
+        return trackName
+    }
 }

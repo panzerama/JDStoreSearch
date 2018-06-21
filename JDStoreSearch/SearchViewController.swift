@@ -43,11 +43,31 @@ class SearchViewController: UIViewController {
     
     // MARK:- Private Methods
     
-    func iTunesURL(searchText: String) -> URL {
+    private func iTunesURL(searchText: String) -> URL {
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let urlString = String(format: "https://itunes.apple.com/search?term=%@", encodedText)
         let url = URL(string: urlString)
         return url!
+    }
+    
+    private func performStoreRequest(with url: URL) -> Data? {
+        do{
+            return try Data(contentsOf: url)
+        } catch {
+            print("Download error: \(error.localizedDescription)")
+            return nil // Is there a reason no to return the error message
+        }
+    }
+    
+    func parse(data: Data) -> [SearchResult] {
+        do {
+            let decoder = JSONDecoder()
+            let result = try decoder.decode(ResultArray.self, from: data)
+            return result.results
+        } catch {
+            print("JSON error: \(error)")
+            return []
+        }
     }
 }
 
@@ -65,6 +85,11 @@ extension SearchViewController: UISearchBarDelegate {
             
             let url = iTunesURL(searchText: searchBar.text!)
             print("URL: '\(url)'")
+            
+            if let data = performStoreRequest(with: url) { // why are we doing this as a string?
+                let results = parse(data: data)
+                print("Search results: \(results)")
+            }
             
             tableView.reloadData()
         }
